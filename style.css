@@ -3,19 +3,19 @@
 
 /* CSS Variables */
 :root {
-    /* Dark Mode */
+    /* Light Mode */
     --primary-color: #C3073F;
     --accent-color: #F0B429;
     --white: #FFFFFF;
-    --black: #1A1A1D;
-    --grey: #4E4E50;
-
-    /* Light Mode */
-    /*--primary-color-light: #C3073F;
-    --accent-color-light: #F0B429;
-    --white: #FFFFFF;
     --off-white: #E2E8F0;
-    --grey: #6F6F6F;*/
+    --grey: #6F6F6F;    
+
+    /* Dark Mode */
+    /*--primary-color-dark: #C3073F;
+    --accent-color-dark: #F0B429;
+    --white: #FFFFFF;
+    --black: #1A1A1D;
+    --grey-dark: #4E4E50;*/
 }
 
 /* CSS Reset */
@@ -79,4 +79,120 @@ aside .logo {
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
+}
+
+/* Header - Navigation */
+.header-nav {
+    background-color: var(--white);
+}
+
+.inner-header-nav {
+    padding: 20px 25px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form img {
+    width: 35px;
+    height: 35px;
+}
+
+form input {
+    border-radius: 20px;
+    width: 70%;
+    padding: 10px;
+    background-color: var(--off-white);
+    border: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile .bell {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.profile .profile-image {
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.profile span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.action-nav {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info img {
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.profile-info .inner-profile-info p,
+.profile-info .inner-profile-info span {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-info .inner-profile-info p {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.profile-info .inner-profile-info span {
+    font-size: 1.4rem;
+}
+
+.action-nav ul {
+    list-style-type: none;
+}
+
+.action-nav ul li {
+    display: inline;
+    padding: 8px 30px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: 700;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Dashboard Body */
+.dashboard-body {
+    background-color: var(--off-white);
 }
