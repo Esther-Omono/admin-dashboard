@@ -1,1 +1,82 @@
-/* Style.css */
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Dark Mode */
+    --primary-color: #C3073F;
+    --accent-color: #F0B429;
+    --white: #FFFFFF;
+    --black: #1A1A1D;
+    --grey: #4E4E50;
+
+    /* Light Mode */
+    /*--primary-color-light: #C3073F;
+    --accent-color-light: #F0B429;
+    --white: #FFFFFF;
+    --off-white: #E2E8F0;
+    --grey: #6F6F6F;*/
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Main Wrapper */
+.dashboard-wrapper {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Sidebar */
+aside {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+aside .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.main-nav-wrapper {
+    padding: 20px 0 0 20px;
+}
+
+.main-nav-wrapper img {
+    width: 20px;
+    height: 20px;
+}
+
+.main-nav {
+    padding: 15px 0 40px 0;
+}
+
+.main-nav ul,
+.sub-nav ul {
+    list-style-type: none;
+    margin-left: -15px;
+}
+
+.main-nav ul li,
+.sub-nav ul li {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
