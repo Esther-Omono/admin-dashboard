@@ -5,7 +5,7 @@
 :root {
     /* Light Mode */
     --primary-color: #C3073F;
-    --accent-color: #F0B429;
+    --accent-color: #6F6F6F;
     --white: #FFFFFF;
     --off-white: #E2E8F0;
     --grey: #6F6F6F;    
@@ -25,12 +25,6 @@
     box-sizing: border-box;
 }
 
-/* Global */
-img {
-    width: 50px;
-    height: 50px;
-}
-
 /* Main Wrapper */
 .dashboard-wrapper {
     font-family: "Roboto", sans-serif;
@@ -48,8 +42,17 @@ aside {
 aside .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     cursor: pointer;
+}
+
+aside .logo img {
+    width: 35px;
+    height: 35px;
+}
+
+aside .logo h1 {
+    font-size: 17px;
 }
 
 .main-nav-wrapper {
@@ -57,8 +60,8 @@ aside .logo {
 }
 
 .main-nav-wrapper img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .main-nav {
@@ -73,11 +76,11 @@ aside .logo {
 
 .main-nav ul li,
 .sub-nav ul li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
     display: flex;
     gap: 15px;
     font-weight: 500;
-    letter-spacing: 1px;
     cursor: pointer;
 }
 
@@ -87,7 +90,7 @@ aside .logo {
 }
 
 .inner-header-nav {
-    padding: 20px 25px;
+    padding: 15px 40px;
 }
 
 .header-top {
@@ -98,18 +101,20 @@ aside .logo {
 
 form {
     display: flex;
-    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
 }
 
 form img {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
 }
 
 form input {
     border-radius: 20px;
     width: 70%;
-    padding: 10px;
+    padding: 5px;
     background-color: var(--off-white);
     border: none;
 }
@@ -121,19 +126,20 @@ form input {
 }
 
 .profile .bell {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
 .profile .profile-image {
     border-radius: 50px;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
 .profile span {
     font-weight: 700;
-    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -152,8 +158,8 @@ form input {
 
 .profile-info img {
     border-radius: 50px;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -164,12 +170,8 @@ form input {
 }
 
 .profile-info .inner-profile-info p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-bottom: 3px;
-}
-
-.profile-info .inner-profile-info span {
-    font-size: 1.4rem;
 }
 
 .action-nav ul {
@@ -178,21 +180,132 @@ form input {
 
 .action-nav ul li {
     display: inline;
-    padding: 8px 30px;
+    padding: 8px 25px;
     background-color: var(--primary-color);
     border-radius: 30px;
     color: var(--white);
     font-weight: 700;
-    margin-right: 20px;
     cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
 }
 
-
-
-
-
-
-/* Dashboard Body */
+/* Projects */
 .dashboard-body {
     background-color: var(--off-white);
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.projects h2 {
+    font-size: 1rem;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.project-item {
+    background-color: var(--white);
+    border-radius: 10px;
+    border-left: 5px solid var(--accent-color);
+    padding: 10px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+}
+
+.project-item h3 {
+    font-size: 1rem;
+}
+
+.project-item p {
+    color: var(--grey);
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.project-icons {
+    margin-top: 5px;
+    gap: 15px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-row: 3;
+}
+
+.project-icons img {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    align-self: end;
+}
+
+/* Announcements */
+
+.announcements h2 {
+    font-size: 1rem;
+}
+
+.announcements-wrapper {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.announcements-wrapper h3 {
+    font-size: 1rem;
+}
+
+.announcements-wrapper p {
+    color: var(--grey);
+    font-size: 0.7rem
+}
+
+.announcements-wrapper hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--grey);
+}
+
+/* Trends */
+.trends {
+    margin-top: 10px;
+}
+
+.trends h2 {
+    font-size: 1rem;
+}
+
+.trends-wrapper {
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.trend-item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.trend-item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.trend-item p:last-child {
+    color: var(--grey);
 }
