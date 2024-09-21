@@ -3,19 +3,11 @@
 
 /* CSS Variables */
 :root {
-    /* Light Mode */
     --primary-color: #C3073F;
     --accent-color: #6F6F6F;
     --white: #FFFFFF;
     --off-white: #E2E8F0;
-    --grey: #6F6F6F;    
-
-    /* Dark Mode */
-    /*--primary-color-dark: #C3073F;
-    --accent-color-dark: #F0B429;
-    --white: #FFFFFF;
-    --black: #1A1A1D;
-    --grey-dark: #4E4E50;*/
+    --grey: #6F6F6F;
 }
 
 /* CSS Reset */
@@ -23,6 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2, h3 {
+    font-size: 1rem;
 }
 
 /* Main Wrapper */
@@ -70,7 +70,6 @@ aside .logo h1 {
 
 .main-nav ul,
 .sub-nav ul {
-    list-style-type: none;
     margin-left: -15px;
 }
 
@@ -174,10 +173,6 @@ form input {
     margin-bottom: 3px;
 }
 
-.action-nav ul {
-    list-style-type: none;
-}
-
 .action-nav ul li {
     display: inline;
     padding: 8px 25px;
@@ -199,10 +194,6 @@ form input {
     grid-template-columns: 2.5fr 1fr;
 }
 
-.projects h2 {
-    font-size: 1rem;
-}
-
 .projects-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -220,10 +211,6 @@ form input {
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: relative;
-}
-
-.project-item h3 {
-    font-size: 1rem;
 }
 
 .project-item p {
@@ -250,20 +237,11 @@ form input {
 }
 
 /* Announcements */
-
-.announcements h2 {
-    font-size: 1rem;
-}
-
 .announcements-wrapper {
     background-color: var(--white);
     border-radius: 10px;
     padding: 15px;
     margin-top: 5px;
-}
-
-.announcements-wrapper h3 {
-    font-size: 1rem;
 }
 
 .announcements-wrapper p {
@@ -280,10 +258,6 @@ form input {
 /* Trends */
 .trends {
     margin-top: 10px;
-}
-
-.trends h2 {
-    font-size: 1rem;
 }
 
 .trends-wrapper {
